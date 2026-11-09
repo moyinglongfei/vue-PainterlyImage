@@ -4,7 +4,7 @@
 
 ## 图片示例
 
-以下使用三张示例图片(仅作展示作用，侵权删除)，分别调用 `simplifyImage(blob, 'comparison')`，全部采用默认参数。左侧为原图，右侧为返回的简化 `png`；`plainPng` 是同一简化画面的浏览器 RGBA PNG 编码。
+以下使用三张示例图片(仅作展示作用，侵权删除)，分别调用 `simplifyImage(blob, 'comparison', { colors: 'auto' })`，其余采用默认参数。左侧为原图，右侧为返回的简化 `png`，两侧统一按 480px 宽度等比展示；`plainPng` 是同一简化画面的浏览器 RGBA PNG 编码。
 
 | 输入图片 | 输出尺寸 | 色数 | png | plainPng |
 | --- | --- | --- | --- | --- |
@@ -16,19 +16,19 @@
 
 | 原图 | 简化 PNG |
 | --- | --- |
-| ![Still_110_001 原图](docs/images/still-110-001-original.png) | ![Still_110_001 简化 PNG](docs/images/still-110-001.png) |
+| <img src="docs/images/still-110-001-original.png" alt="Still_110_001 原图" width="480"> | <img src="docs/images/still-110-001.png" alt="Still_110_001 简化 PNG（auto）" width="480"> |
 
 **PID133646178**
 
 | 原图 | 简化 PNG |
 | --- | --- |
-| ![illust_133646178 原图](docs/images/illust-133646178-original.jpg) | ![illust_133646178 简化 PNG](docs/images/illust-133646178.png) |
+| <img src="docs/images/illust-133646178-original.jpg" alt="illust_133646178 原图" width="480"> | <img src="docs/images/illust-133646178.png" alt="illust_133646178 简化 PNG（auto）" width="480"> |
 
 **THE FINALS艺术图**
 
 | 原图 | 简化 PNG |
 | --- | --- |
-| ![THE FINALS Take Cover 原图](docs/images/the-finals-take-cover-original.jpg) | ![THE FINALS Take Cover 简化 PNG](docs/images/the-finals-take-cover.png) |
+| <img src="docs/images/the-finals-take-cover-original.jpg" alt="THE FINALS Take Cover 原图" width="480"> | <img src="docs/images/the-finals-take-cover.png" alt="THE FINALS Take Cover 简化 PNG（auto）" width="480"> |
 
 ## 调用与参数
 
