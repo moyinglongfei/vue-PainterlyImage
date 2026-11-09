@@ -4,12 +4,12 @@
 
 ## 图片示例
 
-以下使用三张示例图片(仅作展示作用，侵权删除)，分别调用 `simplifyImage(blob, 'comparison', { colors: 'auto' })`，其余采用默认参数。左侧为原图，右侧为返回的简化 `png`，两侧统一按 480px 宽度等比展示；`plainPng` 是同一简化画面的浏览器 RGBA PNG 编码。
+以下使用三张示例图片(仅作展示作用，侵权删除)，调用 `simplifyImage()` 的 `'comparison'` 格式。左侧为原图，右侧为返回的简化 `png`，两侧统一按 480px 宽度等比展示；`plainPng` 是同一简化画面的浏览器 RGBA PNG 编码。
 
 | 输入图片 | 输出尺寸 | 色数 | png | plainPng |
 | --- | --- | --- | --- | --- |
 | Still_110_001.png | 1024 × 512 | 30 | 86.1 KiB | 186.2 KiB |
-| illust_133646178_20250812_190458.jpg | 1024 × 821 | 30 | 69.0 KiB | 165.9 KiB |
+| illust_133646178_20250812_190458.jpg | 1024 × 821 | 32 | 84.9 KiB | 205.3 KiB |
 | THE_FINALS_Concept_006_TakeCover_2880x1620.jpg | 1024 × 576 | 29 | 100.7 KiB | 220.4 KiB |
 
 **魔法少女的魔女裁判游戏CG**
@@ -18,11 +18,15 @@
 | --- | --- |
 | <img src="docs/images/still-110-001-original.png" alt="Still_110_001 原图" width="480"> | <img src="docs/images/still-110-001.png" alt="Still_110_001 简化 PNG（auto）" width="480"> |
 
-**PID133646178**
+**PID133646178（32 色）**
+
+```ts
+await simplifyImage(blob, 'comparison', { colors: 32 })
+```
 
 | 原图 | 简化 PNG |
 | --- | --- |
-| <img src="docs/images/illust-133646178-original.jpg" alt="illust_133646178 原图" width="480"> | <img src="docs/images/illust-133646178.png" alt="illust_133646178 简化 PNG（auto）" width="480"> |
+| <img src="docs/images/illust-133646178-original.jpg" alt="illust_133646178 原图" width="480"> | <img src="docs/images/illust-133646178.png" alt="illust_133646178 简化 PNG（32 色）" width="480"> |
 
 **THE FINALS艺术图**
 
