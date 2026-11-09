@@ -1,0 +1,23 @@
+{
+  "name": "vue-painterly-image",
+  "version": "0.1.0",
+  "description": "Image simplification functions with palette, pixel JSON, region JSON and PNG outputs.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "docs/images"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
